@@ -7,12 +7,12 @@ qr = qrcode.QRCode(
 )
 
 # Solicita o link ou texto para gerar o QR Code
-data = input("link: ")
+data = input("link: https://sandwiche.me/windmaker")
 
 qr.add_data(data)
 qr.make(fit=True)
 
 img = qr.make_image(fill_color="black", back_color="white")
-img.save(input("nome do arquivo: ")+".png")
+img.save(input("nome do arquivo: Link WindMaker ")+".png")
 
 # Oliveira, R. - 2023
