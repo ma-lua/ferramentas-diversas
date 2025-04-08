@@ -7,7 +7,7 @@ qr = qrcode.QRCode(
 )
 
 # Solicita o link ou texto para gerar o QR Code
-data = input("link: ")
+data = input("link:https://sandwiche.me/windmaker ")
 
 qr.add_data(data)
 qr.make(fit=True)
